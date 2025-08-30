@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>شركة الكهرباء - الأجهزة</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="container header-top">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">⚡</span>
+        <span class="brand-name"> الكهرباء</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="القائمة" aria-expanded="false">☰</button>
+      <ul id="devicesMenu" class="devices-menu"></ul>
+    </div>
+  </header>
+
+  <!-- ============== Intro (أبيض) ============== -->
+  <section class="intro-white">
+    <div class="container intro-inner">
+      <div class="intro-text">
+        <h1>حلول قياس ذكية</h1>
+        <p>أنظمة عدّادات دقيقة، تقارير لحظية، وتكامل كامل مع الشبكات الحديثة.</p>
+      </div>
+
+      <figure class="intro-image">
+        <img src="assets/images/slide.jpg" alt="حلول القياس" loading="lazy" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== عنوان الأجهزة ===== -->
+  <div class="container">
+    <div class="section-sep"><span>الأجهزة</span></div>
+  </div>
+
+  <!-- ================= Search ================= -->
+  <div class="container search-wrap-light">
+    <form id="searchForm" class="search-bar light" role="search" aria-label="بحث">
+      <input id="searchInput" type="search" placeholder="ابحث باسم الجهاز…" autocomplete="off" />
+      <button type="submit">بحث</button>
+    </form>
+  </div>
+
+  <!-- ================== Main ================== -->
+  <main class="container content">
+    <div id="cardsGrid" class="cards-grid"></div>
+  </main>
+
+  <!-- ================ Footer ================= -->
+  <footer class="site-footer"><p>© 2025 — جميع الحقوق محفوظة</p></footer>
+
+  <!-- Scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
